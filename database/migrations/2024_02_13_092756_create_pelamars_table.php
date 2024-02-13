@@ -16,10 +16,8 @@ return new class extends Migration
             $table->string('nama');
             $table->string('email');
             $table->string('jenis_pekerjaan');
-            $table->integer('perusahaan_id');
-            $table->timestamps();
-
-            // $table->foreign('perusahaan_id')->references('id')->on('perusahaan');
+            $table->unsignedBigInteger('id_perusahaan');
+            
         });
     }
 
