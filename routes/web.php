@@ -16,8 +16,7 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/', function () {
-    return view('statisdoangcok.index
-        ');
+    return view('statisdoangcok.index');
 });
 
 Auth::routes();
