@@ -13,4 +13,8 @@ class Perusahaan extends Model
     protected $fillable = [
         'perusahaan'
     ];
+
+    public function pelamar(){
+        return $this->hasMany(Pelamar::class, 'id', 'id_perusahaan');
+    }
 }
