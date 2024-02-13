@@ -20,7 +20,7 @@ class KepsekController extends Controller
             $pelamarLoop = Pelamar::where('id_perusahaan', $item->id)->count();
 
             if($pelamarLoop != 0){
-                $persentase = $pelamarLoop * $Jumpelamar * 100;
+                $persentase = $pelamarLoop / $Jumpelamar * 100;
             } else {
                 $persentase = 0;
             }
