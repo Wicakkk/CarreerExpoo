@@ -58,7 +58,7 @@
                 </form>
             </li>
             <li class="nav-item pl-3">
-                <a href="#gataunarofilenyadmn" class="btn btn-warning"><i class="fa-solid fa-info" style="font-size: 20px;"></i></a>
+                <a href="/user-manual" class="btn btn-warning"><i class="fa-solid fa-info" style="font-size: 20px;"></i></a>
             </li>
         </div>
     </nav>
@@ -131,7 +131,7 @@
                 <div class="row">
                     <div class="col-sm-4">
                         <div id="pt1" class="about_inner">
-                            <div class="icon"><a href="/assets/pt1.html"><img src="/images/1.png"></a></div>
+                            <div class="icon"><a href="/pharos"><img src="/images/1.png"></a></div>
                             <h2 class="totaly_text">Pharos Group</h2>
                             <p class="making">Admin Operational, Staff Farmasi, Programmer</p>
                         </div>

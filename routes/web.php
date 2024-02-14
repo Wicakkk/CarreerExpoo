@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\KepsekController;
-use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\KepsekController;
+use App\Http\Controllers\PelamarController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,7 +20,16 @@ Route::get('/', function () {
     return view('statisdoangcok.index');
 });
 
-Auth::routes();
+Route::get('/user-manual', function () {
+    return view('statisdoangcok.usermanual');
+});
+
+Route::get('/pharos', function () {
+    return view('pt.pharos');
+});
+
+Route::post('/save/{id}', [PelamarController::class, 'save']);
+
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Auth::routes();
