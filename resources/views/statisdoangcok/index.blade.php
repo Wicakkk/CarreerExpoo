@@ -12,7 +12,7 @@
 <link rel="icon" href="/images/logo yayasan wahana prestasi prima.png" type="image/png">
 <meta name="keywords" content="">
 <meta name="description" content="">
-<meta name="author" content="">	
+<meta name="author" content="">
 <!-- bootstrap css -->
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <!-- style css -->
@@ -57,8 +57,11 @@
                     <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="searchCompanies()">Search</button>
                 </form>
             </li>
+            <li class="nav-item pl-3">
+                <a href="#gataunarofilenyadmn" class="btn btn-warning"><i class="fa-solid fa-info" style="font-size: 20px;"></i></a>
+            </li>
         </div>
-    </nav>
+    </nav>
     <!-- Navbar end -->
 	<header id="home"class="section">
 	<div class="header_main">
@@ -69,16 +72,16 @@
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
 						<h1 class="web_text" class="web_text animate-on-scroll" style="opacity: 0;"><strong style="font-size: 75px;">Kamu Bingung Cari Pekerjaan?</strong></h1>
 						<p class="donec_text" style="font-size: 15px;">"Sekolah Prestasi Prima aktif menjalin kerja sama yang erat dengan berbagai
-							perusahaan terkemuka. Kemitraan ini dirancang untuk memberikan pengalaman praktis kepada siswa, 
-							memperluas wawasan mereka dalam dunia industri, dan menciptakan peluang karir yang berharga. 
-							Melalui kolaborasi ini, Sekolah Prestasi Prima bertekad memberikan pendidikan yang relevan dan 
+							perusahaan terkemuka. Kemitraan ini dirancang untuk memberikan pengalaman praktis kepada siswa,
+							memperluas wawasan mereka dalam dunia industri, dan menciptakan peluang karir yang berharga.
+							Melalui kolaborasi ini, Sekolah Prestasi Prima bertekad memberikan pendidikan yang relevan dan
 							mempersiapkan siswa untuk meraih kesuksesan di dunia kerja."</p>
                     </div>
                  	<div class="pl-6 ml-1">
 						<div class="img-box">
 							<figure><img src="images/woofer.png" alt="img" style="max-width: 100%;" height="590px"></figure>
                 		</div>
-           			</div>           
+           			</div>
         		</div>
        		</div>
      	</div>
@@ -110,7 +113,7 @@
         </div>
     </div>
 
-    
+
     <div id="service" class="choose_section">
     	<div class="container">
     		<div class="col-sm-12">
@@ -147,7 +150,7 @@
                             <p class="making">Content Creator</p>
                         </div>
                     </div>
-                </div>    		
+                </div>
             </div>
         </div>
         <div class="choose_section_2">
@@ -177,7 +180,7 @@
                 </div>
                 <div class="bt_main">
                     <button class="read_more"><a href="#"></a></button>
-                </div>   		
+                </div>
             </div>
         </div>
         </div>
@@ -207,7 +210,7 @@
                             <p class="making">Sales, Inside Sales, Administrasi, Warehouse</p>
                         </div>
                     </div>
-                </div>    		
+                </div>
             </div>
         </div>
         <div class="choose_section_2">
@@ -237,7 +240,7 @@
                 </div>
                 <div class="bt_main">
                     <button class="read_more"><a href="#"></a></button>
-                </div>   		
+                </div>
             </div>
         </div>
         </div>
@@ -293,7 +296,7 @@
                 </ul>
             </div>
         </div>
-    </div>    
+    </div>
 </div>
 <div class="copyright_main">
 	<div class="container">
