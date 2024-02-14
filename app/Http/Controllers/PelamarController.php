@@ -10,16 +10,17 @@ class PelamarController extends Controller
     public function save(Request $request, $id)
     {
         // dd($request->all());
-        Pelamar::create([
-            "nama" => $request->nama,
-            "notelp" => $request->notelp,
-            "email" => $request->email,
-            "jenis_kelamin" => $request->jenis_kelamin,
-            "pendidikan_terakhir" => $request->pendidikan_terakhir,
-            "jenis_pekerjaan" => $request->jenis_pekerjaan,
-            "portofolio" => $request->portofolio,
-            "id_perusahaan" => $id,
-        ]);
+
+        $pelamar = new Pelamar();
+        $pelamar->nama = $request->nama;
+        $pelamar->notelp = $request->notelp;
+        $pelamar->email = $request->email;
+        $pelamar->jenis_kelamin = $request->jenis_kelamin;
+        $pelamar->pendidikan_terakhir = $request->pendidikan_terakhir;
+        $pelamar->jenis_pekerjaan = $request->jenis_pekerjaan;
+        $pelamar->portofolio = $request->portofolio;
+        $pelamar->id_perusahaan = $id;
+        $pelamar->save();
 
         return redirect('/');
     }
