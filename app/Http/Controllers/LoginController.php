@@ -25,10 +25,16 @@ class LoginController extends Controller
 
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
-            $perusahaan = Auth::user()->id_perusahaan;
-            $data = Pelamar::where('id_perusahaan', $perusahaan)->get();
-            
-            return view('statisdoangcok.kepsek', $data);
+
+            if(Auth::user()->level != 'Kepsek'){
+
+                $perusahaan = Auth::user()->id_perusahaan;
+                $data = Pelamar::where('id_perusahaan', $perusahaan)->get();
+                
+                return view('statisdoangcok.kepsek', $data);
+            } else {
+                return redirect()->route('kepsek');
+            }
         }
         return redirect()->route('login');
     }

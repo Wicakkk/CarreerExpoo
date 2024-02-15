@@ -39,7 +39,7 @@ Route::post('/loginAction', [LoginController::class, 'loginAction'])->name('logi
 
 
 Route::group(['middleware' => ['auth']], function () {
-    Route::get('/kepsek', [KepsekController::class, 'index']);
+    Route::get('/kepsek', [KepsekController::class, 'index'])->name('kepsek');
     Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 });
 
