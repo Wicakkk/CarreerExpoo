@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\KepsekController;
@@ -30,25 +31,17 @@ Route::get('/pharos', function () {
 
 Route::post('/save/{id}', [PelamarController::class, 'save']);
 
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Auth::routes();
-
-Route::get('/kepsek', [KepsekController::class, 'index']);
-
-Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('home');
-
-
-Route::group(['middleware' => 'auth'], function () {
-    Route::resource('user', 'App\Http\Controllers\UserController', ['except' => ['show']]);
-    Route::get('/guest', 'Auth\LoginController@guestLogin')->name('guest.login');
-	Route::get('profile', ['as' => 'profile.edit', 'uses' => 'App\Http\Controllers\ProfileController@edit']);
-	Route::put('profile', ['as' => 'profile.update', 'uses' => 'App\Http\Controllers\ProfileController@update']);
-	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'App\Http\Controllers\ProfileController@password']);
-	Route::get('{page}', ['as' => 'page.index', 'uses' => 'App\Http\Controllers\PageController@index']);
+Route::group(['middleware' => ['guest']], function () {
+    Route::get('/login', [LoginController::class, 'login'])->name('login');
 });
 
-Route::get('/guest', function () {
-    return view('home'); // Ganti 'guest' dengan nama view halaman tamu Anda
-})->name('guest');
+Route::post('/loginAction', [LoginController::class, 'loginAction'])->name('login-action');
+
+
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('/kepsek', [KepsekController::class, 'index']);
+    Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+});
+
+
 

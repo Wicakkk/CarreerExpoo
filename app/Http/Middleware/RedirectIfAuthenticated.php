@@ -11,7 +11,11 @@ class RedirectIfAuthenticated
     public function handle(Request $request, Closure $next, $guard = null)
     {
         if (Auth::guard($guard)->check()) {
-            return redirect('/home'); // Ubah '/guest' dengan rute yang sesuai
+            if (Auth::user()->level != 'Kepsek'){
+                return redirect('/dashboard');
+            } else {
+                return redirect('/kepsek');
+            }
         }
 
         return $next($request);

@@ -146,7 +146,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="mb-3">
-                        <form action="/save/1" method="post">
+                        <form action="/save/8643846" method="post">
                             @csrf
                             <label for="nama" class="form-label"><b>Nama Lengkap</b></label>
                             <input type="text" class="form-control" id="nama" placeholder=""
