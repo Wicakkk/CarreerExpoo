@@ -40,6 +40,8 @@ Route::group(['middleware' => ['guest']], function () {
 
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/kepsek', [KepsekController::class, 'index'])->name('kepsek');
+    Route::get('/dashboard', [KepsekController::class, 'hrd'])->name('dashboard');
+
     Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 });
 

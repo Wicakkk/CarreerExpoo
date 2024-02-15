@@ -31,9 +31,9 @@ class LoginController extends Controller
                 $perusahaan = Auth::user()->id_perusahaan;
                 $data = Pelamar::where('id_perusahaan', $perusahaan)->get();
                 
-                return view('statisdoangcok.kepsek', $data);
+                return redirect('/dashboard');
             } else {
-                return redirect()->route('kepsek');
+                return redirect('/kepsek');
             }
         }
         return redirect()->route('login');

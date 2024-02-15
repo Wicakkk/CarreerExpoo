@@ -14,10 +14,8 @@ class KepsekController extends Controller
     {
 
         if (Auth::user()->level != 'Kepsek') {
-            return redirect()->route('login');
+            return redirect()->route('dashboard');
         } else {
-
-
             $Jumpelamar = Pelamar::count();
             $perusahaan = Perusahaan::all();
             $labelChart = [];
@@ -42,6 +40,22 @@ class KepsekController extends Controller
                 'persentase' => json_encode($persentaseChart)
             ];
             return view("statisdoangcok.kepsek", $data);
+        }
+    }
+
+    public function hrd()
+    {
+
+        if (Auth::user()->level == 'Kepsek') {
+            return redirect()->route('kepsek');
+        } else {
+            $id = Auth::user()->id_perusahaan;
+            $perusahaan = Perusahaan::where('id', $id)->pluck('perusahaan')->first();
+            $data = Pelamar::where('id_perusahaan', Auth::user()->id_perusahaan)->get();
+            return view('statisdoangcok.HR', [
+                'data' => $data,
+                'perusahaan' => $perusahaan
+            ]);
         }
     }
 }
