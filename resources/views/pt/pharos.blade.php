@@ -62,9 +62,9 @@
                     <div class="container">
                         <div class="row marginii">
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                                <div class="taital_main"></div>
-                                <h1 class="web_text"><strong>Pharos Group</strong></h1>
-                                <p class="donec_text">PT Pharos Indonesia adalah salah satu perusahaan farmasi terbesar
+                                {{-- <div class="taital_main"></div> --}}
+                                <h1 class=""><strong>Pharos Group</strong></h1>
+                                <p class="">PT Pharos Indonesia adalah salah satu perusahaan farmasi terbesar
                                     di Indonesia yang memproduksi dan memasarkan produk-produk kefarmasian yang inovatif
                                     dan sesuai dengan kebutuhan rakyat Indonesia. Perusahaan ini didirikan pada tanggal
                                     30 September 1971 oleh Bapak Dr. Eddie Lembong, seorang entrepreneur visioner yang
@@ -73,9 +73,9 @@
                                 </p>
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                                <div class="img-box">
+                                <div class="">
                                     <figure>
-                                        <img src="/images/pharos2.png" alt="img" style="max-width: 100%;">
+                                        <img src="/images/pharos2.png" alt="img" style="max-width: 70%;">
                                     </figure>
                                 </div>
                             </div>

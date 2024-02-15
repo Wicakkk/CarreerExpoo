@@ -18,4 +18,8 @@ class Perusahaan extends Model
     public function pelamar(){
         return $this->hasMany(Pelamar::class, 'id', 'id_perusahaan');
     }
+
+    public function users(){
+        return $this->belongsTo(User::class, 'id_perusahaan', 'id');
+    }
 }
