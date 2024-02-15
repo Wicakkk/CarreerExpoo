@@ -67,10 +67,6 @@ class PerusahaanSeeder extends Seeder
                 'perusahaan' => 'PT. Prima Fajar Cahaya Surya',
                 'level' => 'Fajar'
             ],[
-                'id' => 1353653,
-                'perusahaan' => 'Indivara Group',
-                'level' => 'Anteraja'
-            ],[
                 'id' => 1872744,
                 'perusahaan' => 'Infomedia',
                 'level' => 'Infomedia'
