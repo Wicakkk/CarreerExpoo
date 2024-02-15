@@ -60,6 +60,8 @@
                 <span class="logo-text" style="color: white;"><strong>Yayasan Prestasi Prima</strong></span>
             </a>
             <h2 style="color: white;">Rekapan Hasil Input</h2>
+            <a href="{{ route('logout') }}">Logout</a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
         </div>
     </nav>
 
