@@ -1,48 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- basic -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- mobile metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
-    <!-- site metas -->
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Career Expo</title>
-    <link rel="icon" href="/images/logo yayasan wahana prestasi prima.png" type="image/png" />
-    <!-- bootstrap css -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    <!-- style css -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <!-- Responsive-->
-    <link rel="stylesheet" href="css/responsive.css" />
-    <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
-    <!-- Tweaks for older IEs-->
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen" />
-
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-      
-      h1 {
-        font-size: 30px;
-      }
-      h2 {
-        font-size: 18px;
-      }
-      @keyframes fadeIn {
-        0% {
-          opacity: 0;
+        h1 {
+            font-size: 26px;
         }
-        100% {
-          opacity: 1;
+        h2 {
+            font-size: 18px;
         }
-      }
-    
-      .list-group-item {
-        animation: fadeIn 3s ease-in-out;
-      }
+        .card {
+            width: 100%; /* Lebar kartu 100% */
+            max-width: 100%; /* Maksimum lebar kartu */
+        }
+        .card img {
+            width: 70%;
+        }
+        .list-group-item {
+            animation: fadeIn 3s ease-in-out;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
     </style>
   </head>
   <body>
@@ -104,7 +98,7 @@
               <li class="list-group-item border border-secondary" style="background-color: #FFDEC1;">
                 <h2>6. Isi seluruh formulir dengan jujur dan benar ya <i class="fa-solid fa-exclamation ml-1"></i></h2>
                 <img src="images/form.png" alt="" width="70%" class="ml-5" />
-              </li> 
+              </li>
               <li class="list-group-item border border-secondary" style="background-color: #EFD9FF;">
                 <h2>7. Pastikan seluruh formulir sudah terisi dan jangan sampai kamu memasukkan data yang tidak sesuai <i class="fa-solid fa-check-double ml-1"></i></h2>
               </li>
@@ -123,7 +117,7 @@
             <p class="copy_text">Copyright SlaFaWo © 2024. <span style="color: white;"><a href="https://www.instagram.com/smkprestasiprima?igsh=MTc0dWFzYzZiM2U1OQ==">SMK PRESTASI PRIMA</span> </a></p>
         </div>
     </div>
-    
+
     <!-- Javascript files-->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="js/popper.min.js"></script>
