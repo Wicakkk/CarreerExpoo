@@ -63,18 +63,40 @@
         </div>
     </nav>
 
-    <div class="container">
+
+    <div class="row my-5">
+        <div class="col-xl-4 col-lg-5 mx-auto">
+            <div class="card h-100 justify-content-center shadow">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">
+                        Persentase Jumlah Pelamar Seluruh Perusahaan
+                    </h6>
+                </div>
+                <div class="card-body">
+                    <div class="pt-4 pb-2">
+                        <canvas id="pieChart"
+                            style="min-height: 400px; height: 400px; max-height: 400px; max-width: 100%;"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    {{-- <div class="container">
         <div class="card card-danger">
         </div>
         <div class="card-body">
             <canvas id="pieChart"
                 style="min-height: 500px; height: 500px; max-height: 500px; max-width: 100%;"></canvas>
         </div>
-    </div>
-    </div>
-    </div>
+    </div> --}}
 
-    <div class="container">
+
+    {{-- <div class="container"> --}}
         <div class="row py-5">
             <div class="col-lg-10 mx-auto">
                 <div class="card rounded shadow border-0">
@@ -96,18 +118,18 @@
                                 </thead>
                                 <tbody>
                                     <?php $no = 1; ?>
-                                    @foreach ($pelamar as $item)       
-                                    <tr>
-                                        <th>{{ $no++ }}</th>
-                                        <th>{{ $item->nama }}</th>
-                                        <th>{{  $item->notelp  }}</th>
-                                        <th>{{ $item->email }}</th>
-                                        <th>{{ $item->jenis_kelamin }}</th>
-                                        <th>{{ $item->pendidikan_terakhir }}</th>
-                                        <th>{{ $item->portofolio }}</th>
-                                        <th>{{ $item->jenis_pekerjaan }}</th>
-                                        <th>{{ $item->perusahaan->perusahaan }}</th>
-                                    </tr>
+                                    @foreach ($pelamar as $item)
+                                        <tr>
+                                            <th>{{ $no++ }}</th>
+                                            <th>{{ $item->nama }}</th>
+                                            <th>{{ $item->notelp }}</th>
+                                            <th>{{ $item->email }}</th>
+                                            <th>{{ $item->jenis_kelamin }}</th>
+                                            <th>{{ $item->pendidikan_terakhir }}</th>
+                                            <th>{{ $item->portofolio }}</th>
+                                            <th>{{ $item->jenis_pekerjaan }}</th>
+                                            <th>{{ $item->perusahaan->perusahaan }}</th>
+                                        </tr>
                                     @endforeach
                                 </tbody>
                             </table>
@@ -116,7 +138,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    {{-- </div> --}}
 
     <script>
         $(function() {
@@ -126,7 +148,10 @@
                 labels: {!! $label !!},
                 datasets: [{
                     data: {!! $persentase !!},
-                    backgroundColor: ['#f56954', '#00a65a', '#f39c12', '#00c0ef', '#3c8dbc', '#d2d6de', '#e91e63', '#4caf50', '#2196f3', '#ffeb3b', '#9c27b0', '#673ab7', '#ff9800', '#795548', '#cddc39', '#ff5722', '#03a9f4', '#8bc34a'],
+                    backgroundColor: ['#f56954', '#00a65a', '#f39c12', '#00c0ef', '#3c8dbc', '#d2d6de',
+                        '#e91e63', '#4caf50', '#2196f3', '#ffeb3b', '#9c27b0', '#673ab7', '#ff9800',
+                        '#795548', '#cddc39', '#ff5722', '#03a9f4', '#8bc34a'
+                    ],
                 }]
             };
             var pieOptions = {
@@ -134,8 +159,8 @@
                 responsive: true,
                 legend: {
                     labels: {
-                        fontColor: 'white', // Mengatur warna teks legenda menjadi putih
-                        fontSize: 16, // Mengatur ukuran font legenda
+                        // fontColor: 'black', // Mengatur warna teks legenda menjadi putih
+                        fontSize: 12, // Mengatur ukuran font legenda
                     }
                 }
             };
@@ -149,49 +174,7 @@
         });
     </script>
 
-    <style>
-        #pieChart {
-            max-height: 500px;
-            width: 100%;
-            margin: auto;
-            display: block;
-        }
 
-        @media only screen and (max-width: 768px) {
-            #pieChart {
-                max-height: 200px;
-                font-size: small;
-                /* Atur tinggi maksimum untuk layar berukuran sedang */
-            }
-        }
-
-        @media only screen and (max-width: 576px) {
-            #pieChart {
-                max-height: 100px;
-                font-size: smaller;
-                /* Atur tinggi maksimum untuk layar kecil */
-            }
-        }
-
-        #myNavbar h2 {
-            font-size: 1.7rem;
-            /* Ukuran font default */
-        }
-
-        @media only screen and (max-width: 768px) {
-            #myNavbar h2 {
-                font-size: 1.5rem;
-                /* Ukuran font untuk layar berukuran sedang */
-            }
-        }
-
-        @media only screen and (max-width: 576px) {
-            #myNavbar h2 {
-                font-size: 1rem;
-                /* Ukuran font untuk layar kecil */
-            }
-        }
-    </style>
 
 
 
