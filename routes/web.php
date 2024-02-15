@@ -33,9 +33,9 @@ Route::post('/save/{id}', [PelamarController::class, 'save']);
 
 Route::group(['middleware' => ['guest']], function () {
     Route::get('/login', [LoginController::class, 'login'])->name('login');
+    Route::post('/loginAction', [LoginController::class, 'loginAction'])->name('login-action');
 });
 
-Route::post('/loginAction', [LoginController::class, 'loginAction'])->name('login-action');
 
 
 Route::group(['middleware' => ['auth']], function () {

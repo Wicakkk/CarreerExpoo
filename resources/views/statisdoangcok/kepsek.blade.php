@@ -126,7 +126,7 @@
                 labels: {!! $label !!},
                 datasets: [{
                     data: {!! $persentase !!},
-                    backgroundColor: ['#f56954', '#00a65a', '#f39c12', '#00c0ef', '#3c8dbc', '#d2d6de'],
+                    backgroundColor: ['#f56954', '#00a65a', '#f39c12', '#00c0ef', '#3c8dbc', '#d2d6de', '#e91e63', '#4caf50', '#2196f3', '#ffeb3b', '#9c27b0', '#673ab7', '#ff9800', '#795548', '#cddc39', '#ff5722', '#03a9f4', '#8bc34a'],
                 }]
             };
             var pieOptions = {
