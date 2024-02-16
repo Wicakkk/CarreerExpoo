@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
-    <title>Career Expo | Pharos</title>
+    <title>Career Expo | Cirill Indonesia</title>
     <link rel="icon" href="/images/logo yayasan wahana prestasi prima.png" type="image/png">
     <meta name="keywords" content="">
     <meta name="description" content="">
@@ -32,6 +32,9 @@
 </head>
 
 <body>
+    {{-- <div id="loader-wrapper">
+		<div id="loader"></div>
+	</div> --}}
     <nav id="myNavbar" class="navbar navbar-expand-lg navbar-light bg-transparent">
         <div class="container">
             <a class="navbar-brand logo-small" href="#">
@@ -46,7 +49,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="/">Home <span class="sr-only"></span></a>
+                        <a class="nav-link" href="/">Home</a>
                     </li>
                 </ul>
             </div>
@@ -60,19 +63,14 @@
                         <div class="row marginii">
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                                 {{-- <div class="taital_main"></div> --}}
-                                <h1 class="mt-5"><strong>Pharos Group</strong></h1>
-                                <p class="">PT Pharos Indonesia adalah salah satu perusahaan farmasi terbesar
-                                    di Indonesia yang memproduksi dan memasarkan produk-produk kefarmasian yang inovatif
-                                    dan sesuai dengan kebutuhan rakyat Indonesia. Perusahaan ini didirikan pada tanggal
-                                    30 September 1971 oleh Bapak Dr. Eddie Lembong, seorang entrepreneur visioner yang
-                                    ingin membangun sebuah perusahaan farmasi lokal yang modern, efisien, dan berstandar
-                                    tinggi; sebanding dengan yang terbaik di dunia.
-                                </p>
+                                <h1 class="mt-5"><strong>PT CIRILL INDONESIA</strong></h1>
+							    <p class="">Pt. Cirill Indonesia berdiri sejak tahun 1997, berawal dari general trading, retail, produksi hingga distribusi. Dengan produk berupa Air Minum Dalam Kemasan (AMDK) bermerek "Cirill". PT. Cirill Indonesia telah mampu mengintegrasikan proses bisnis berbasis manajemen dan teknologi, dimana PT. Cirill Indonesia merupakan perusahaan AMDK pertama yang menerapkan pemantauan distribusi AMDK dengan menggunakan Teknologi GPS.
+							    </p>
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                                 <div class="mt-5">
                                     <figure>
-                                        <img src="/images/pharos2.png" alt="img" style="max-width: 70%;">
+                                        <img src="/images/cirill.png" alt="img" style="max-width: 100%;">
                                     </figure>
                                 </div>
                             </div>
@@ -89,42 +87,30 @@
             <div class="col-sm-12">
                 <h1 class="choose_text">Daftar<span class="color"> Pekerjaan</span></h1>
                 <ol class="lorem_text" style="text-align: left; margin-bottom: 25px;">
-                    <hr style="border-top: 3px solid #000000; margin: 20px 0;">
-                    <h2><strong>1. Admin Operational</strong></h2>
-                </ol>
-                <ol class="lorem_text" style="text-align: left; margin-bottom: 25px;">
-                    <h2><strong>2. Operation Manager</strong></h2>
-                </ol>
-                <ol class="lorem_text" style="text-align: left; margin-bottom: 25px;">
-                    <h2><strong>3. Quality Control Staff</strong></h2>
-                </ol>
-                <ol class="lorem_text" style="text-align: left; margin-bottom: 25px;">
-                    <h2><strong>4. Store Manager</strong></h2>
-                </ol>
-                <ol class="lorem_text" style="text-align: left; margin-bottom: 25px;">
-                    <h2><strong>5. Programmer</strong></h2>
-                </ol>
-                <ol class="lorem_text" style="text-align: left; margin-bottom: 25px;">
-                    <h2><strong>6. Finance & Accounting Staff</strong></h2>
-                </ol>
-                <ol class="lorem_text" style="text-align: left; margin-bottom: 25px;">
-                    <h2><strong>7. Petugas Gudang / Packer</strong></h2>
-                </ol>
-                <ol class="lorem_text" style="text-align: left; margin-bottom: 25px;">
-                    <h2><strong>8. Sales Promotion</strong></h2>
-                </ol>
-                <ol class="lorem_text" style="text-align: left; margin-bottom: 25px;">
-                    <h2><strong>9. Sales Representative</strong></h2>
-                </ol>
-                <ol class="lorem_text" style="text-align: left; margin-bottom: 25px;">
-                    <h2><strong>10. Staff Farmasi</strong></h2>
-                </ol>
-                <ol class="lorem_text" style="text-align: left; margin-bottom: 25px;">
-                    <h2><strong>11. Area Sales Manager</strong></h2>
-                </ol>
-                <ol class="lorem_text" style="text-align: left; margin-bottom: 25px;">
-                    <h2><strong>12. Marketing Supervisor</strong></h2>
-                </ol>
+					<hr style="border-top: 3px solid #000000; margin: 20px 0;">
+					<h2><strong>1. Kasir Retail</strong></h2>
+				</ol>
+				<ol class="lorem_text" style="text-align: left; margin-bottom: 25px;">
+					<h2><strong>2. Delivery Service</strong></h2>
+				</ol>
+				<ol class="lorem_text" style="text-align: left; margin-bottom: 25px;">
+					<h2><strong>3. Customer Relation</strong></h2>
+				</ol>
+				<ol class="lorem_text" style="text-align: left; margin-bottom: 25px;">
+					<h2><strong>4. Staff Acc Finance</strong></h2>
+				</ol>
+				<ol class="lorem_text" style="text-align: left; margin-bottom: 25px;">
+					<h2><strong>5. Staff Admin Gudang</strong></h2>
+				</ol>
+				<ol class="lorem_text" style="text-align: left; margin-bottom: 25px;">
+					<h2><strong>6. Driver Sales</strong></h2>
+				</ol>
+				<ol class="lorem_text" style="text-align: left; margin-bottom: 25px;">
+					<h2><strong>7. Helper Sales</strong></h2>
+				</ol>
+				<ol class="lorem_text" style="text-align: left; margin-bottom: 25px;">
+					<h2><strong>8. Supervisor Sales</strong></h2>
+				</ol>
                 Tertarik Dengan Perusahaan Kami!?
                 <button type="button" class="register_button" data-bs-toggle="modal"
                     data-bs-target="#contohModal">Daftar Sekarang</button>
@@ -159,7 +145,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="jenis_kelamin" class="form-label"><b>Jenis Kelamin</b></label>
-                        <select class="form-select" id="jenis_kelamin" aria-label="Default select example"
+                        <select class="form-control" id="jenis_kelamin" aria-label="Default select example"
                             name="jenis_kelamin">
                             <option value="Laki-laki">Laki-laki</option>
                             <option value="Perempuan">Perempuan</option>
@@ -174,11 +160,14 @@
                         <label for="jenis_pekerjaan" class="form-label"><b>Jenis Pekerjaan</b></label>
                         <select class="form-control" id="jenis_pekerjaan" aria-label="Default select example"
                             name="jenis_pekerjaan">
-                            <option value="Operation Manager">Operation Manager</option>
-                            <option value="Quality Control Staff">Quality Control Staff</option>
-                            <option value="Store Manager">Store Manager</option>
-                            <option value="Programmer">Programmer</option>
-                            <option value="Sales Promotion">Sales Promotion</option>
+                            <option value="Kasir Retail">Kasir Retail</option>
+                            <option value="Delivery Service">Delivery Service</option>
+                            <option value="Customer Relation">Customer Relation</option>
+                            <option value="Staff Acc Finance">Staff Acc Finance</option>
+                            <option value="Staff Admin Gudang">Staff Admin Gudang</option>
+                            <option value="Driver Sales">Driver Sales</option>
+                            <option value="Helper Sales">Helper Sales</option>
+                            <option value="Supervisor Sales">Supervisor Sales</option>
                         </select>
                     </div>
                     <div class="mb-3">
