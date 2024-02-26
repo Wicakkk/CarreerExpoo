@@ -25,7 +25,7 @@ Route::get('/user-manual', function () {
     return view('statisdoangcok.usermanual');
 });
 
-Route::group([], function () {
+
     Route::get('/pharos', function () {
         return view('pt.pharos');
     });
@@ -73,7 +73,7 @@ Route::group([], function () {
     Route::get('/infomedia', function () {
         return view('pt.infomedia');
     });
-});
+
 
 Route::post('/save/{id}', [PelamarController::class, 'save']);
 
